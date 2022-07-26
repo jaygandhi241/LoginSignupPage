@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>REGISTER</title>
+		<style>
+			#register{
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				margin-top: 15%;
+				flex-direction: column;
+				/* border: 2px solid green; */
+				
+			}
+			body{
+			   background-image: url("BACKG.jpg");
+			   background-repeat: no-repeat;
+			   
+			}
+			h1{
+				color: white;
+	            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				align-content: flex-start;
+			}
+			#button{
+				background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+ 				font-size: 16px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+  				-webkit-transition-duration: 0.4s; /* Safari */
+  				transition-duration: 0.4s;
+				border-radius: 5px;
+
+            }
+			#button:hover{
+                background-color: aquamarine;
+				color: black;
+			}
+			input {
+ 				 /* width: 100%; */
+				  padding: 12px 20px;
+                  margin: 8px 0;
+                  box-sizing: border-box
+			}
+			input:hover{
+				  padding: 13px 21px;
+				  
+			}
+		</style>
+        
+	</head>
+	<body>
+		<div id="register">
+			<% if(message!=""){ %>
+				<div class="alert alert-danger">
+				   <%=message%> 123
+				</div> 	
+		   <%}%>
+		<h1>Registration</h1> <br>
+		<form id="reg-form" action="/add" method="POST">
+			<input type="email" autocomplete="off" id="username" placeholder="Email" ="username"/> <br> <br>
+			<input type="text" name="name_id" autocomplete="off" placeholder="username" inamed="name_id"> <br> <br>
+			<input type="password" autocomplete="off" id="password" placeholder="plainTextPassword" name="password" /> <br> <br>
+			<input type="text" autocomplete="off" name="" id="number" placeholder="Number"   name="number">  <br> <br>
+			<input type="submit" value="REGISTER" id="button" />
+			<a href="http://localhost:9999/login"></a>
+		</form>
+	</div>
+
+		<script>
+			
+		</script>
+	</body>
+</html>
